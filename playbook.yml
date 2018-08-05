@@ -1,0 +1,31 @@
+---
+- hosts: all
+#  vars:
+#    http_port: 80
+#    max_clients: 200
+#  remote_user: root
+  roles:
+     - mlangry.ubuntu-restore-privacy
+     - mlangry.google-chrome
+     - { role: mlangry.git }
+     - mlangry.arc-theme
+     - mlangry.arc-icon-theme
+     - { role: mlangry.zsh }
+     - { role: mlangry.oh-my-zsh }
+     - { role: kosssi.phpstorm, tags: phpstorm , become: true }
+     - role: gantsign.visual-studio-code
+       users:
+        - username: vagrant
+          visual_studio_code_extensions:
+            - peterjausovec.vscode-docker
+            - bbenoist.vagrant
+            - robertohuertasm.vscode-icons
+          visual_studio_code_settings: {
+            "files.associations": {
+              "Vagrantfile": "ruby"
+            }
+          }
+  tasks:
+      - name: Installation terminator
+        become: yes
+        apt: name=terminator state=latest

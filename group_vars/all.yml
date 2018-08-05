@@ -1,0 +1,167 @@
+google_chrome_global_preferences:
+    homepage: http://www.google.com
+    homepage_is_newtabpage: false
+    session:
+      restore_on_startup": 4,
+      startup_urls:
+        - http://www.google.com/ig
+    bookmark_bar:
+      show_on_all_tabs: false
+    extensions:
+      settings:
+        ealjoljnibpdkocmldliaoojpgdkcdob:
+          location: 1
+          granted_permissions:
+            api:
+              - "bookmarks"
+              - "tabs"
+            explicit_host:
+              - "http://*/*"
+              - "https://*/*"
+          manifest:
+            key: "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDGWUFCjyhJGd/Y9lLyku5IYpWbwa7pkWEkcHerFSwLAlLalG9EvRNnAGTbSmjUNjbyO1ZScrPwHJhOcnHLlrcdLxCOEtzrqK882nxi6m4NMbWeYGShjpro3TQooL/nj2W+V+B2bnLUQIAB6YNShNvWtHturEw68vi7xodNcj2FLwIDAQAB"
+            name: "Slick RSS"
+            permissions:
+              - "http://*/"
+              - "https://*/"
+              - "tabs"
+              - "bookmarks"
+            update_url: "https://clients2.google.com/service/update2/crx"
+            version: "0.0"
+          path : "ealjoljnibpdkocmldliaoojpgdkcdob\\0.0"
+          state: 1
+        edacconmaakjimmfgnblocblbcdcpbko:
+          active_permissions:
+            api:
+            - clipboardWrite
+            - contextMenus
+            - notifications
+            - tabs
+            - unlimitedStorage
+            manifest_permissions: []
+          commands: {}
+          content_settings: []
+          creation_flags: 9
+          events: []
+          extension_can_script_all_urls: true
+          from_bookmark: false
+          from_webstore: true
+          granted_permissions:
+            api:
+            - clipboardWrite
+            - contextMenus
+            - notifications
+            - tabs
+            - unlimitedStorage
+            manifest_permissions: []
+          ime_activate_called_before: false
+          incognito_content_settings: []
+          incognito_preferences: {}
+          initial_keybindings_set: true
+          install_time: '13124378628403410'
+          last_activated_ime_engine: false
+          lastpingday: '13124534400518530'
+          location: 1
+          manifest:
+            background:
+              page: background.html
+            browser_action:
+              default_icon:
+                '19': images/logo/_ACTIVE/logo_19x19_disabled.png
+                '38': images/logo/_ACTIVE/logo_38x38_disabled.png
+              default_title: Initializing Session Buddy...
+            content_security_policy: script-src 'self' https://www.google-analytics.com;
+              object-src 'self'
+            current_locale: fr
+            default_locale: en
+            description: Manage Your Browser Sessions
+            icons:
+              '16': images/logo/_ACTIVE/logo_16x16.png
+              '32': images/logo/_ACTIVE/logo_32x32.png
+              '48': images/logo/_ACTIVE/logo_48x48.png
+              '128': images/logo/_ACTIVE/logo_128x128.png
+            incognito: spanning
+            key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3VAERhYnBzageN9f5j9V/kwVPdTyArpjMwVqfj1Rsp3wn+2lyGStXJRyhCFeXyy/TC8VJqB3Apur+Qstt4qgrR0pnFp+gk32HHdKy1gw8xW7o1tJxSk8FlK9z17sDwdVsH3B8VbnEE2t1A8Bl9v8f2fQJw6KQ1o2RJI0wk/uNWQIDAQAB
+            manifest_version: 2
+            minimum_chrome_version: '51'
+            name: Session Buddy
+            options_page: options.html
+            permissions:
+            - contextMenus
+            - notifications
+            - tabs
+            - clipboardWrite
+            - unlimitedStorage
+            update_url: https://clients2.google.com/service/update2/crx
+            version: 3.4.14
+          needs_sync: true
+          never_activated_since_loaded: true
+          path: edacconmaakjimmfgnblocblbcdcpbko/3.4.14_0
+          preferences: {}
+          regular_only_preferences: {}
+          state: 1
+          was_installed_by_default: false
+          was_installed_by_oem: false 
+    browser:
+      show_home_button: true
+      default_search_provider_data:
+        template_url_data:
+          alternate_urls: []
+          created_by_policy: false
+          date_created: '13105789754831161'
+          favicon_url: ''
+          id: '142'
+          image_url: ''
+          image_url_post_params: ''
+          input_encodings:
+            - UTF-8
+          instant_url: ''
+          instant_url_post_params: ''
+          keyword: qwant.com
+          last_modified: '13105789754831161'
+          new_tab_url: ''
+          originating_url: 'https://www.qwant.com/opensearch.xml'
+          prepopulate_id: 0
+          safe_for_autoreplace: true
+          search_terms_replacement_key: ''
+          search_url_post_params: ''
+          short_name: Qwant
+          suggestions_url: 'https://api.qwant.com/api/suggest/?q={searchTerms}&client=opensearch'
+          suggestions_url_post_params: ''
+          synced_guid: 891E533C-44F3-4FC1-93E4-AD14BD614BE9
+          url: 'https://www.qwant.com/?q={searchTerms}&client=opensearch'
+          usage_count: 0
+
+
+git_config_file: ~/.gitconfig
+git_config:
+  color:
+    branch: auto
+    diff: auto
+    interactive: auto
+    status: auto
+    ui: auto
+  core:
+    editor: nano
+    excludesfile: "~/.gitignore"
+  alias:
+    clo: clone
+    co: checkout
+    st: status
+    pur: pull --rebase
+    ci: commit
+    rc: rebase --continue
+    lg: log -M --decorate --graph --oneline
+    br: branch
+    sth: stash
+
+git_ignore:
+    - ".*"
+    - "!.gitignore"
+    - "!.htaccess"
+    - "*~"
+    - "*.log"
+
+phpstorm_version: 2018.2
+phpstorm_install_dir: /opt
+phpstorm_bin: /usr/local/bin/phpstorm
